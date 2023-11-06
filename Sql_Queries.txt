@@ -1,0 +1,31 @@
+select * from "LoginInfo";
+
+INSERT INTO "LoginInfo" ( Username, Password) VALUES ('Admin','admin123');
+
+INSERT INTO LoginInfo (Username,Password) VALUES ('Admin','Password');
+
+INSERT INTO "LoginInformation" (Password) VALUES ( 'admin123');
+
+INSERT INTO "LoginInformation" (username,Password) VALUES ('Admin','admin123');
+
+DEALLOCATE ALL;
+
+select * from "LoginInformation";
+
+DELETE FROM "LoginInformation" LIMIT 2;
+
+DELETE FROM "LoginInformation"
+WHERE ctid IN (SELECT ctid FROM "LoginInformation" LIMIT 2);
+
+SELECT current_user;
+
+SELECT current_setting('hostname');
+
+select * From "LoginInformation";
+
+INSERT INTO "LoginInformation" (username,password) VALUES ('Admin1234','admin123');
+
+DELETE FROM "LoginInformation" WHERE "username" = "aDmin123";
+
+DELETE FROM "LoginInformation" WHERE username = 'aDmin123';
+
